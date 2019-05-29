@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Assignment 1.1.3</title>
+    </head>
+    <body>
+        <h1 align = "center">My First sub-window</h1>
+        <center><input type = "button" value = "Gmail" onclick="gmail();">
+            <input type = "button" value = "Hotstar" onclick="hotstar();">
+            <input type = "button" value = "Wikipedia" onclick="wikipedia();"><br><br><br>
+        <iframe height = 30% width = 40% id = "iframe1"></iframe></center>
+    </body>
+    <script>
+        function gmail(){
+            document.getElementById("iframe1").src = "https://mail.google.com/";
+        }
+        function hotstar(){
+            document.getElementById("iframe1").src = "http://www.hotstar.com";
+        }
+        function wikipedia(){
+            document.getElementById("iframe1").src = "https://wikipedia.org";
+        }
+    </script>
+</html>

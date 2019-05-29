@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Assignment 1.1.4</title>
+    </head>
+    <body>
+        <h1 align = "center">My First sub-window</h1>
+        <center><form>
+            <input type = "text" id = "tf1">
+            <input type = "button" value = "Go!" onclick ="fun();"><br>
+        </form>
+            Height(in px)<input type = "number" id = "nf1">
+            Width(in px)<input type = "number" id = "nf2"><br><br>
+            <input type = "button" value = "Resize" onclick = "fun2();"><br><br><br>
+            <iframe id = "iframe1"></iframe></center>
+            <script>
+                function fun(){
+                   document.getElementById("iframe1").src = document.getElementById("tf1").value;
+                }
+                function fun2(){
+                    document.getElementById("iframe1").height = document.getElementById("nf1").value;
+                    document.getElementById("iframe1").width = document.getElementById("nf2").value;
+                }
+            </script>
+    </body>
+</html>
